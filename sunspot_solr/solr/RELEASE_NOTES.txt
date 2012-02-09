@@ -1,0 +1,58 @@
+(c) transaxtions llc
+
+Dec 11, 2011
+
+Solr 3.5 with RankingAlgorithm 1.3 (NRT support)
+------------------------------------------------
+1. Performance with MBArtists index returns responses in about 2ms
+
+Sep 30, 2011
+
+Solr 3.4 with RankingAlgorithm 1.3 (NRT support)
+------------------------------------------------
+1. RankingAlgorithm 1.3 supports the entire LuceneQuery syntax, so you should now be able to execute +- queries.
+
+2. Performance is better than 1.2 and uses less memory than 1.2. Queries that were in the 50-60ms range should now perform in the 30-40ms range.
+
+August 18, 2011
+
+Solr 3.3 with RankingAlgorithm 1.2 (NRT support)
+------------------------------------------------
+
+1. Uses RankingAlgorithm 1.2. Two algorithms, SIMPLE and COMPLEX now available. SIMPLE is very fast and returns queries in <100ms, uses a small memory foot print and scale to 100m docs. COMPLEX is a little slow but more accurate and can return queries in <100ms.
+
+July 11, 2011
+
+Solr-RA Release 3.3 with NRT support 
+------------------------------------
+1. Early access release
+
+July 08, 2011
+
+Solr-RA Release 3.2 with NRT support 
+------------------------------------
+1. Performance is now 5000 docs / sec (add/update)
+2. Wildcard queries show docs/stats in realtime, for eg: q=*:*&rows=0
+
+June 22, 2011
+
+Solr-RA Release 3.2 with NRT support (early access)
+---------------------------------------------------
+1. NRT support, no commit needed, no closing index searchers or clearing caches.
+
+June 11, 2011
+
+Solr-RA Release 3.2  (beta)
+--------------------
+1. New release. All functionality in Solr should work as it is.
+2. No NRT support
+
+Solr-RA Release 1.11
+--------------------
+1. AND/OR, AND, OR defaultOperator recognized
+2. mm=n% works now
+3. q.op=AND, OR, AND|OR recognized
+4. Product mode ranking as on Wiki for "wii console"
+5. NRT implementation, no commit or close of IndexSearchers or clearing cached needed
+6. NRT works with faceting
+
